@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="product_product_picking_label" model="ir.ui.view">
+            <field name="name">product.product.picking.label</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_variant_easy_edit_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='codes']" position="after">
+                    <group name="label_picking">
+                        <group>
+                            <field name="label_incoming"/>
+                            <field name="label_outgoing"/>
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

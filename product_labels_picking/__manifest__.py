@@ -15,6 +15,7 @@
     ],
     'data': [
         'views/product_template.xml',
+        'views/product_product.xml',
         'wizard/product_product_label_print.xml'
     ],
 }
